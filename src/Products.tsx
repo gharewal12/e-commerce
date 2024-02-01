@@ -101,7 +101,6 @@ const ProductListingPage = () => {
         <>
             <Loader loading={isLoading} />
             <Grid container spacing={4} padding={4}>
-            <Grid container spacing={4} padding={4}>
                 <Grid item xs={12} md={12} lg={12} xl={12}>
                     <Typography variant="h3" component="div" style={{ display: 'flex', justifyContent: 'center' }} >
                         eCommerce
