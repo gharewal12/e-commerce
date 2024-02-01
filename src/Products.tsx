@@ -100,14 +100,14 @@ const ProductListingPage = () => {
     return (
         <>
             <Loader loading={isLoading} />
-            <Grid container spacing={4} padding={8}>
+            <Grid container spacing={4} padding={4}>
                 <Grid item xs={12} md={12} lg={12} xl={12}>
                     <Typography variant="h3" component="div" style={{ display: 'flex', justifyContent: 'center' }} >
                         eCommerce
                     </Typography>
                 </Grid>
                 <Grid item xs={12} md={12} lg={12} xl={12} className='stickyHeader'>
-                    <Grid container spacing={2} width={'100%'}>
+                    <Grid container rowSpacing={2} columnSpacing={2} width={'100%'}>
                         <Grid item xs={12} md={7} lg={8} xl={8}>
                             <TextField
                                 label="Search"

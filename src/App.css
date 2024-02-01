@@ -35,7 +35,6 @@ body {
 .stickyHeader {
   position: -webkit-sticky;
   position: sticky;
-  padding: 50px;
   top: 0;
   z-index: 2;
   background-color: white;
