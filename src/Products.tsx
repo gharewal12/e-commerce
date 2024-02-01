@@ -75,7 +75,8 @@ const ProductListingPage = () => {
 
     // Filter products based on search term
     useEffect(() => {
-        const filtered = products.filter((product) =>
+        let searchProducts = categoryFilter === "" ? products : filteredProducts;
+        const filtered = searchProducts.filter((product) =>
             product.title.toLowerCase().includes(searchTerm.toLowerCase())
         );
         setFilteredProducts(filtered);
