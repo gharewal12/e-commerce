@@ -2,37 +2,41 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  padding: 10px;
+}
+
+.MuiCardMedia-root {
+  object-fit: contain !important;
+}
+
+.sortIcon .MuiSelect-icon {
+  font-size: 2rem;
+  transform: none !important;
+  padding-top: 0.1rem;
+}
+
+/* Product Card*/
+.productCard {
+  height: 900px;
+  box-shadow: rgba(128, 48, 19, 0.1) 0px 20px 25px -5px !important;
+}
+
+.productCard:hover {
+  transition: ease 0.2s;
+  transform: translateY(-10px) scale(1.015);
+}
+
+.stickyHeader {
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 50px;
+  top: 0;
+  z-index: 2;
+  background-color: white;
 }
